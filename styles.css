@@ -1,4 +1,5 @@
-/*here start de website template core*/ /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/*here start de website template core*/
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
 /**
@@ -452,4 +453,22 @@ ul li {
 /*here finish de website internal components modules*/
 /*here start the hacks section*/
 /*here finish the hacks section*/
+.main-header {
+  background: #1a2766;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.main-header__container {
+  height: 70px;
+  width: 100%;
+  max-width: 1700px;
+  border: 1px solid white;
+}
 /*# sourceMappingURL=styles.css.map */
