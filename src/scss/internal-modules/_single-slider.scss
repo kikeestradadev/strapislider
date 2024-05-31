@@ -13,6 +13,24 @@
 		z-index: 5000;
 		right: 50px;
 	}
+
+	&__game-decription{
+		display: none;
+		width: 400px;
+		height: auto;
+		@include from(l){
+			display: block;
+			position: absolute;
+			z-index: 5000;
+			left: 0;
+			bottom: 0;
+			
+		}
+		@include from(lg){			
+			width: 610px;
+			height: 197px;
+		}
+	}
 	&__item{
 		// background-color				: #233de5;
 		position						: relative;
@@ -158,6 +176,10 @@
 		width: 100%;
 		text-align: center;
 		margin-bottom: 10px;
+		background: linear-gradient(90deg, #C3922E 1.87%, #FFFBCC 34.07%, #C3922E 53.69%, #EED688 73.31%, #FFFBCC 97.96%);
+		background-clip: text;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
 		@include from(l){
 			text-align: left;
 		}
@@ -188,7 +210,7 @@
 		align-items						: center;
 		justify-content					: center;
 		border-radius					: 4px;
-		background-color				: #32AE8B;
+		// background-color				: #32AE8B;
 		color							: #FFF;
 		font-family						: Montserrat;
 		font-size						: 24px;
@@ -197,6 +219,11 @@
 		line-height						: normal;
 		text-transform					: uppercase;
 		text-decoration					: none;
+
+
+
+		background: linear-gradient(180deg, #1AB767 0%, #02770C 100%);
+
 		@include from(l){
 			height							: 77px;
 			width							: 274px;
