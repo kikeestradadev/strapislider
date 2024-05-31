@@ -248,7 +248,7 @@
 	}
 	&__prev{
 		border-radius					: 50%;
-        left							: 0;
+        left							: 15px;
 	}
 	&__prev::after{
 		content							: "" !important;
@@ -265,7 +265,7 @@
 	}
 	&__next{
 		border-radius					: 50%;
-        right							: 0;
+        right							: 15px;
 	}
 	&__next::after{
 		content							: "" !important;
