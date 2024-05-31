@@ -1,12 +1,18 @@
 extends ../config/template 
 append config
-	-currentPage		= "Juren"
-	-siteName			= 'compa'
+	-currentPage		= "betanysports"
+	-siteName			= 'home'
 	-content			= 'content' 
 	-pageDescription	= 'Pagina inicial de MyBoilerplate'
 block main-header
 block main-container
-	include ../core-modules/core-module
-	include ../internal-modules/internal-module
+	include ../internal-modules/single-slider
+	-for(let i=1; i <=5; i++)
+		h1 Lorem, ipsum.
+		p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, iusto. Molestiae, dolores repellat. 
+			|Assumenda perferendis veniam, ipsam iure consequatur voluptatem et, tenetur, mollitia cupiditate impedit explicabo illo velit dicta quaerat!
+	//- include ../internal-modules/main-banner
+	//- include ../core-modules/core-module
+	//- include ../internal-modules/internal-module 
 block main-footer
 block scripts

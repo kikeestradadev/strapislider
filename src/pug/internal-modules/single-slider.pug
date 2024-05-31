@@ -1,0 +1,22 @@
+div(class='swiper single-slider')
+	img(src="images/sticky20.png", alt="logo", class='single-slider__sticky-logo')
+	div(class='swiper-wrapper')
+		-for(let i=1; i <=3; i++)
+			div(class='swiper-slide single-slider__item')
+				div(class='single-slider__text-container')
+					h1(class='single-slider__title') 
+						|celtics
+						span(class='single-slider__vrs-container'): img(src="images/vrs.png", alt="logo", class='single-slider__vrs-logo')
+						| pacers
+					span(class='single-slider__date') MONDAY MAY 27TH
+					span(class='single-slider__promo') heroes become legends
+					span(class='single-slider__label') GET UP TO $500 CASH bonus
+					a(class='single-slider__cta', href="#") BET NOW 
+				<video class='single-slider__video-dk' autoplay loop muted playsinline>
+					<source src="images/videodk.webm" type="video/webm">
+				</video>
+				//- <video class='single-slider__video-mb' autoplay loop muted playsinline>
+				//- 	<source src="images/videomb.webm" type="video/webm">
+				//- </video>
+	div(class='single-slider__prev swiper-button-prev')
+	div(class='single-slider__next swiper-button-next')
