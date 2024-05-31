@@ -135,6 +135,14 @@
 		line-height						: normal;
 		letter-spacing					: 9.84px;
 		text-transform					: uppercase;
+		display: block;
+		width: 100%;
+		text-align: center;
+		margin-bottom: 10px;
+		@include from(l){
+			text-align: left;
+		}
+		
 	}
 	&__promo{
 		font-family						: Montserrat;
@@ -146,6 +154,14 @@
 		text-transform					: uppercase;
 		color							: #CB9F3E;
 		text-transform					: uppercase;
+		display: block;
+		width: 100%;
+		text-align: center;
+		margin-bottom: 10px;
+		@include from(l){
+			text-align: left;
+		}
+		
 	}
 	&__label{
 		color							: #FFF;
@@ -156,6 +172,14 @@
 		line-height						: normal;
 		letter-spacing					: 9.84px;
 		text-transform					: uppercase;
+		display: block;
+		width: 100%;
+		text-align: center;
+		margin-bottom: 10px;
+		@include from(l){
+			text-align: left;
+		}
+		
 	}
 	&__cta{
 		width							: 100%;
