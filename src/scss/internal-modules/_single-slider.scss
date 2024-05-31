@@ -1,7 +1,12 @@
 /*here start small-size slider module styles*/
 .single-slider{		
 	z-index								: 0 !important;
-	height								: 608px;
+	height								: auto;	
+	@include from(l){
+		height								: 608px;
+		background-image					: url("images/bg.png");
+		background-size: cover;
+	}
 	&__sticky-logo{
 		position: absolute;
 		top: 0;
@@ -9,7 +14,7 @@
 		right: 50px;
 	}
 	&__item{
-		background-color				: #233de5;
+		// background-color				: #233de5;
 		position						: relative;
 		width							: 100%;
 	}
@@ -20,6 +25,15 @@
 		height							: auto;
 		@include from(l){ 
 			display						: block;
+		}
+	}
+	&__video-mb{
+		width: 100%;
+		height: auto;
+		
+		margin: 0 auto;
+		@include from(l){
+			display: none;
 		}
 	}
 	&__text-container{
