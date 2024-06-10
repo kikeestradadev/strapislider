@@ -9,7 +9,7 @@
 	min-height						: 313px;
 	padding-bottom					: 15px;	
 	@include from(l){
-		background-image			: url("images/sports_bg.png");
+		
 		background-size				: cover;
 		padding-bottom 				: 0;
 	}
