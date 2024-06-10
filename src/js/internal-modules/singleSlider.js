@@ -20,6 +20,7 @@ const singleSlider = () => {
                     nextEl: ".swiper-button-next",
                     prevEl: ".swiper-button-prev",
                 },
+				
                 // Accessibility options
                 a11y: {
                     enabled: true,
