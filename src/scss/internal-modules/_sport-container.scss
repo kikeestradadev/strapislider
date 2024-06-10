@@ -63,7 +63,10 @@
 	height							: 65%;
 	width							: 100%;
 	background-color				: #0e1b71;
-	padding-bottom					: 15px;
+	padding-bottom					: 45px;
+	@include from(m){
+		padding-bottom				: 90px;
+	}
 	@include from(l){
 		position					: absolute;
 		background-color			: transparent;

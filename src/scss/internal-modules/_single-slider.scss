@@ -39,6 +39,26 @@
 		top								: 6%;
 		height							: 98%;
 	}
+	&__pagination{
+		// border: 2px solid red;
+		bottom: 45px !important;
+		height: 18px;
+		@include from(m){
+			bottom: 60px !important;
+		}
+		@include from(l){
+			display: none;
+		}		
+	}
+	&__pagination > span.swiper-pagination-bullet{
+		width: 13px;
+		height: 13px;
+		background: #7a86b3;
+		opacity: 1;
+	}
+	&__pagination > span.swiper-pagination-bullet-active{
+		background-color: white;
+	}
 	
 	.swiper-button-disabled{ 
 		opacity							: .3; 
