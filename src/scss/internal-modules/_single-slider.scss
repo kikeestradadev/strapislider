@@ -199,7 +199,7 @@
 	&__prev, &__next{
 		--swiper-navigation-size		: 24px;
         background-color				: transparent;
-        margin-top						: -35px;
+        // margin-top						: -35px;
 		color							: white;
 		font-weight						: bold;	
 		// border							: 1px solid white;
@@ -211,13 +211,13 @@
 	}
 	&__prev{
         left							: 0;
-		top								: 6%;
-		height							: 98%;
+		top								: 45%;
+		height							: 20%;
 	}
 	&__next{
 		right							: 0;
-		top								: 6%;
-		height							: 98%;
+		top								: 45%;
+		height							: 20%;
 	}
 	&__pagination{
 		// border: 2px solid red;
