@@ -8,8 +8,9 @@
 	// border							: 2px solid red;
 	min-height						: 313px;
 	padding-bottom					: 15px;	
+	background						: none !important;
 	@include from(l){
-		
+		// background-image			: url("images/casino_bg.png");
 		background-size				: cover;
 		padding-bottom 				: 0;
 	}
