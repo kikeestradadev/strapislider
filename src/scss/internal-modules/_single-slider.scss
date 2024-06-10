@@ -28,6 +28,11 @@
 	}
 	
 }
+&__sticky-ribon{
+	position: absolute;
+	right: 25px;
+	top: 0;
+}
 &__video-container{
 	position						: relative;	
 	@include fromTo(s,l){
