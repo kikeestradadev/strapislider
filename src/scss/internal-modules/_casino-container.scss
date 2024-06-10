@@ -15,6 +15,9 @@
 		display: block;
 		text-align: left;
 	}
+	@include from(lg){
+		margin-bottom: 15px;
+	}
 }
 &__casino-title{
 	display: block;
@@ -45,6 +48,11 @@
 		font-size: 50px;
 		text-align: left;
 	}
+	@include from(lg){
+		font-size: 70px;
+		text-align: left;
+		margin-bottom: 15px;
+	}
 }
 &__casino-game{
 	display: none;
@@ -62,6 +70,9 @@
 		display: block;
 		text-align: left;
 	}
+	@include from(lg){
+		margin-bottom: 15px;
+	}
 }
 &__casino-date{
 	display: block;
@@ -78,5 +89,8 @@
 	}
 	@include from(l){
 		text-align: left;
+	}
+	@include from(lg){
+		margin-bottom: 15px;
 	}
 }

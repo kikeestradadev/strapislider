@@ -33,6 +33,33 @@
 	right: 25px;
 	top: 0;
 	z-index: 1000;
+	width: 60px;
+	height: 91px;
+	@include from(m){
+		width: 70px;
+		height: 106px;
+	}
+	@include from(l){
+		width: 81px;
+		height: 124px;
+	}
+}
+&__game-description{
+	display: none;
+	@include from(l){
+		display: block;
+		position: absolute;
+		bottom: 0;
+		z-index: 1000;
+		width: 298px;
+		height: 84px;
+	}
+	@include from(xl){
+		
+		width: 550px;
+		height: 155px;
+	}
+	
 }
 &__video-container{
 	position						: relative;	
