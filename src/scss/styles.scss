@@ -6,11 +6,13 @@
 $breakpoints 		:
 	(
 		s	: 0,
+		sm	: 480px,
 		m	: 768px,
 		l	: 1024px,
 		lg	: 1440px,
 		xl	: 1600px,
-		xxl	: 1920px
+		xxl	: 1920px,
+		xxxl: 3000px
 	);
 @import "./layout/layout.scss";
 @import "./layout/fonts.scss";

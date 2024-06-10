@@ -1,23 +1,32 @@
 div(class='swiper single-slider')
-	img(src="images/sticky20.png", alt="logo", class='single-slider__sticky-logo')
-	img(src="images/game-description.png", alt="logo", class='single-slider__game-decription')
-	div(class='swiper-wrapper')
-		-for(let i=1; i <=3; i++)
-			div(class='swiper-slide single-slider__item')
+	div(class='swiper-wrapper', style='height:auto !important')
+		
+		
+		div(class='swiper-slide single-slider__item')
+		
+		
+			div(class='single-slider__sport-container')
+				div(class='single-slider__video-container')
+					video(class='single-slider__video-dk' autoplay='' loop='' muted='' playsinline='')
+							source(src='videos/sports_dk.webm' type='video/webm')
+					video(class='single-slider__video-mb' autoplay='' loop='' muted='' playsinline='')
+						source(src='videos/sports_mb.webm' type='video/webm')
 				div(class='single-slider__text-container')
 					h1(class='single-slider__title') 
-						span(class='single-slider__title-team-1') celtics
+						span(class='single-slider__title-team-1') Lorem, ipsum.   
 						span(class='single-slider__vrs-container'): img(src="images/vrs.png", alt="logo", class='single-slider__vrs-logo')
-						span(class='single-slider__title-team-2') pacers
+						span(class='single-slider__title-team-2') Lorem, ipsum.
 					span(class='single-slider__date') MONDAY MAY 27TH
-					span(class='single-slider__promo') heroes become legends
+					span(class='single-slider__promo') heroes become
 					span(class='single-slider__label') GET UP TO $500 CASH bonus
 					a(class='single-slider__cta', href="#") BET NOW 
-				<video class='single-slider__video-dk' autoplay loop muted playsinline>
-					<source src="images/videodk.webm" type="video/webm">
-				</video>
-				<video class='single-slider__video-mb' autoplay loop muted playsinline>
-					<source src="images/videomb.webm" type="video/webm">
-				</video>
+		div(class='swiper-slide single-slider__item')
+			div(class='single-slider__lotto-container')
+				div(class='single-slider__lotto-container-item') lorem
+				div(class='single-slider__lotto-container-item') lorem
+		div(class='swiper-slide single-slider__item')
+			div(class='single-slider__casino-container')
+				div(class='single-slider__casino-container-item') lorem
+				div(class='single-slider__casino-container-item') lorem				
 	div(class='single-slider__prev swiper-button-prev')
 	div(class='single-slider__next swiper-button-next')

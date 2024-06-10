@@ -1,0 +1,264 @@
+&__sport-container{	
+	position						: relative;
+	width							: 100%;
+	display							: flex;
+	flex-wrap						: wrap;
+	position						: relative;
+	height							: 100%;
+	// border							: 2px solid red;
+	min-height						: 313px;
+	padding-bottom					: 15px;	
+	@include from(l){
+		background-image			: url("images/sports_bg.png");
+		background-size				: cover;
+		padding-bottom 				: 0;
+	}
+}
+&__video-container{
+	position						: relative;	
+	@include fromTo(s,l){
+		&:before {
+			content					: "";
+			background				: linear-gradient(to top, #0e1b71 5%, #0e1b71 5%, transparent 50%);
+			position				: absolute;
+			width					: 100%;
+			height					: 100%;
+			right					: 0;
+			bottom					: 0;
+			left					: 0;
+			z-index					: 1;
+			opacity					: 1;
+			@include from(l) {
+				opacity				: 0;
+			}
+		}
+	}
+	width							: 100%;
+}
+
+&__video-dk{
+	display							: none;
+	width							: 100%;
+	// max-width: 980px;
+	// border: 1px solid white;
+	@include from(l){
+		display: block;
+		max-width					: 50%;
+		// border: 1px solid white;
+	}
+	
+}
+&__video-mb{
+	width							: 100%;		
+	// border: 1px solid white;
+	@include from(l){
+		display						: none;
+	}
+}
+&__text-container{
+	// border							: 1px solid yellow;
+	justify-content					: space-evenly;
+	padding							: 0 15px;
+	bottom							: 0;
+	height							: 65%;
+	width							: 100%;
+	background-color				: #0e1b71;
+	padding-bottom					: 15px;
+	@include from(l){
+		position					: absolute;
+		background-color			: transparent;
+		top							: 50%;
+		left						: 50%;
+		transform					: translate(-50%, -50%);
+		max-width					: 400px;
+		left						: 67%;
+		padding						: 0;
+		min-height					: 200px !important;
+		// border: 1px solid red;
+		align-items					: flex-start;
+	}
+	@include from(l){
+		max-width					: 550px;
+		left						: 65%;
+	}
+	@include from(lg){
+		max-width					: 900px;
+		left						: 67%;
+	}
+	@include from(xl){
+		max-width					: 950px;
+		left						: 65%;
+	}
+}
+
+&__title{
+	color							: #FFF;
+	font-family						: "Akira Expanded";
+	font-style						: normal;
+	font-weight						: 800;
+	line-height						: 20px;
+	text-transform					: uppercase;
+	z-index							: 1000;
+	width							: 100%;
+	@include from(l){
+		margin-bottom				: 5px;
+	}
+
+}
+&__title-team-1, &__title-team-2{
+	text-shadow						: 2px 2px 4px rgba(0, 0, 0, 0.5);
+	z-index							: 1000;
+	position: relative;
+	font-size						: 35px;
+	display							: block;
+	text-align						: center;
+	line-height						: 35px;
+	@include from(l){
+		font-size					: 25px;
+		display						: inline-block;
+		
+	}
+	@include from(lg){
+		font-size					: 40px;
+		
+	}
+}
+&__vrs-container{	
+	z-index							: 2000;
+	position						: relative;	
+	// border: 1px solid white;	
+	width							: 100%;
+	// border: 1px solid yellow;	
+	height							: 20px;
+	display							: block;
+	@include from(l){
+		display						: inline-block;
+		width						:25px;
+	}
+}
+&__vrs-logo{
+	width							: 40px; 
+	height							: auto;
+	position: absolute;
+	top								: 50%;
+	left							: 50%;
+	transform						: translate(-50%, -50%);
+	@include from(lg){
+		width						:60px;
+		top							: 15%;
+	}
+}
+&__date{
+	text-shadow						: 2px 2px 4px rgba(0, 0, 0, 0.5);
+	z-index							: 1000;
+	position						: relative;
+	color							: #FFF;
+	font-family						: Montserrat;
+	font-size						: 12px;
+	font-style						: normal;
+	font-weight						: 400;
+	line-height						: normal;
+	letter-spacing					: 9.84px;
+	text-transform					: uppercase;
+	display							: block;
+	width							: 100%;	
+	text-align						: center;
+	margin-bottom					: 25px;
+	@include from(l){
+		font-size					: 13px;
+		text-align					: left;
+		margin-bottom				: 15px;
+	}
+	@include from(l){
+		font-size					: 24px;
+		margin-bottom				: 30px;
+	}
+	
+}
+&__promo{
+	font-family						: Montserrat;
+	font-style						: normal;
+	font-weight						: 800;
+	line-height						: normal;
+	letter-spacing					: 3.2px;
+	text-transform					: uppercase;
+	color							: #CB9F3E;
+	text-transform					: uppercase;
+	display							: none;
+	width							: 100%;
+	background						: linear-gradient(90deg, #C3922E 1.87%, #FFFBCC 34.07%, #C3922E 53.69%, #EED688 73.31%, #FFFBCC 97.96%);
+	background-clip					: text;
+	-webkit-background-clip			: text;
+	-webkit-text-fill-color			: transparent;
+	@include from(l){
+		display						: block;
+		font-size					: 17px;
+		text-align					: left;
+		margin-bottom				: 5px;
+	}
+	@include from(l){
+		font-size					: 32px;
+	}
+}
+&__label{
+	color							: #FFF;
+	font-family						: Montserrat;
+	font-size						: 24px;
+	font-style						: normal;
+	font-weight						: 400;
+	line-height						: normal;
+	letter-spacing					: 9.84px;
+	text-transform					: uppercase;
+	display							: none;
+	width							: 100%;
+	text-align						: center;
+	@include from(l){
+		display						: block;
+		font-size					: 13px;
+		text-align					: left;
+		margin-bottom				: 15px;
+	}
+	@include from(lg){
+		font-size					: 24px;
+		margin-bottom				: 30px;
+	}
+}
+&__cta{
+	position: relative;
+	z-index: 1000;
+	width							: 100%;
+	height							: 53px;
+	display							: flex;
+	align-items						: center;
+	justify-content					: center;
+	border-radius					: 4px;
+	color							: #FFF;
+	font-family						: Montserrat;
+	font-size						: 24px;
+	font-style						: normal;
+	font-weight						: 700;
+	line-height						: normal;
+	text-transform					: uppercase;
+	text-decoration					: none;
+	background						: linear-gradient(180deg, #1AB767 0%, #02770C 100%);
+	@include fromTo(s,l){
+		margin						: 0 auto;
+	}
+	@include from(sm){		
+		height						: 53px;
+		font-size					: 30px;
+	}
+	@include from(l){
+		width						: 274px;
+		height						: 51px;
+		font-size					: 22px;
+		margin-right				: auto !important;
+	}
+	@include from(lg){
+		width						: 274px;
+		height						: 77px;
+		font-size					: 16px;
+		margin-right				: auto;
+		font-size					: 30px;
+	}
+}
