@@ -109,6 +109,12 @@
 	width							: 100%;
 	background-color				: #0e1b71;
 	min-height: 320px;
+	@include fromTo(s,l){
+		padding-bottom: 75px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
 	@include from(sm){
 		min-height: 250px;
 	}
