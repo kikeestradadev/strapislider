@@ -7,8 +7,9 @@
 	text-transform					: uppercase;
 	z-index							: 1000;
 	width							: 100%;
+	margin-bottom					: 5px;
 	@include from(l){
-		// margin-bottom				: 5px;
+		
 	}
 
 }
@@ -74,12 +75,7 @@
 		font-size					: 13px;
 		text-align					: left;
 		margin-bottom				: 15px;
-	}
-	@include from(l){
-		font-size					: 24px;
-		// margin-bottom				: 30px;
-	}
-	
+	}	
 }
 &__matchup-promo{
 	font-family						: Montserrat;
@@ -96,13 +92,14 @@
 	background-clip					: text;
 	-webkit-background-clip			: text;
 	-webkit-text-fill-color			: transparent;
+	margin-bottom					: 5px;
 	@include from(l){
 		display						: block;
 		font-size					: 17px;
 		text-align					: left;
-		// margin-bottom				: 5px;
+		
 	}
-	@include from(l){
+	@include from(lg){
 		font-size					: 32px;
 	}
 }
