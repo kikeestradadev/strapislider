@@ -1,4 +1,4 @@
-&__title{
+&__matchup-title{
 	color							: #FFF;
 	font-family						: "Akira Expanded";
 	font-style						: normal;
@@ -8,11 +8,11 @@
 	z-index							: 1000;
 	width							: 100%;
 	@include from(l){
-		margin-bottom				: 5px;
+		// margin-bottom				: 5px;
 	}
 
 }
-&__title-team-1, &__title-team-2{
+&__matchup-title-team-1, &__matchup-title-team-2{
 	text-shadow						: 2px 2px 4px rgba(0, 0, 0, 0.5);
 	z-index							: 1000;
 	position: relative;
@@ -30,7 +30,7 @@
 		
 	}
 }
-&__vrs-container{	
+&__matchup-vrs-container{	
 	z-index							: 2000;
 	position						: relative;	
 	// border: 1px solid white;	
@@ -43,7 +43,7 @@
 		width						:25px;
 	}
 }
-&__vrs-logo{
+&__matchup-vrs-logo{
 	width							: 40px; 
 	height							: auto;
 	position: absolute;
@@ -55,7 +55,7 @@
 		top							: 15%;
 	}
 }
-&__date{
+&__matchup-date{
 	text-shadow						: 2px 2px 4px rgba(0, 0, 0, 0.5);
 	z-index							: 1000;
 	position						: relative;
@@ -77,11 +77,11 @@
 	}
 	@include from(l){
 		font-size					: 24px;
-		margin-bottom				: 30px;
+		// margin-bottom				: 30px;
 	}
 	
 }
-&__promo{
+&__matchup-promo{
 	font-family						: Montserrat;
 	font-style						: normal;
 	font-weight						: 800;
@@ -100,13 +100,13 @@
 		display						: block;
 		font-size					: 17px;
 		text-align					: left;
-		margin-bottom				: 5px;
+		// margin-bottom				: 5px;
 	}
 	@include from(l){
 		font-size					: 32px;
 	}
 }
-&__label{
+&__matchup-label{
 	color							: #FFF;
 	font-family						: Montserrat;
 	font-size						: 24px;
@@ -126,6 +126,6 @@
 	}
 	@include from(lg){
 		font-size					: 24px;
-		margin-bottom				: 30px;
+		// margin-bottom				: 30px;
 	}
 }

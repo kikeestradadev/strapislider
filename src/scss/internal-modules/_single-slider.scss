@@ -102,55 +102,48 @@
 		display						: none;
 	}
 }
-&__text-container{
-	// border							: 1px solid yellow;
-	padding							: 0 15px;
-	bottom							: 0;
-	width							: 100%;
-	background-color				: #0e1b71;
-	// min-height: 320px;
-	@include fromTo(s,l){
-		padding-bottom: 75px;
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		min-height: 280px;
-		> h1{
-			margin-bottom: 20px;
-		}
-		> span{
-			margin-bottom: 20px;
-		}
-	}
-	@include from(sm){
-		// min-height: 250px;
-	}
-	@include from(l){
-		position					: absolute;
-		background-color			: transparent;
-		top							: 50%;
-		left						: 50%;
-		transform					: translate(-50%, -50%);
-		max-width					: 400px;
-		left						: 67%;
-		padding						: 0;
-		min-height					: 200px !important;
-		// border: 1px solid red;
-		align-items					: flex-start;
-	}
-	@include from(l){
-		max-width					: 550px;
-		left						: 65%;
-	}
-	@include from(lg){
-		max-width					: 900px;
-		left						: 67%;
-	}
-	@include from(xl){
-		max-width					: 950px;
-		left						: 65%;
-	}
+&__text-container {
+	// border: 1px solid white;
+    padding: 0 15px;
+    bottom: 0;
+    width: 100%;
+    background-color: #0e1b71;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto; // Agrega esta línea para asegurar altura automática en resoluciones menores
+    @include fromTo(s,l) {
+        padding-bottom: 75px;
+        min-height: 280px;
+    }
+    @include from(sm) {
+        // Puedes ajustar más propiedades aquí si es necesario
+    }
+    @include from(l) {
+        position: absolute;
+        background-color: transparent;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 550px;
+        left: 65%;
+        padding: 0;
+        min-height: 250px !important;
+        // border: 1px solid red;
+        align-items: flex-start;
+		justify-content: space-evenly;
+    }
+    @include from(lg) {
+        max-width: 900px;
+        left: 67%;
+		min-height: 350px !important;
+    }
+    @include from(xl) {
+        max-width: 950px;
+        left: 65%;
+    }
 }
+
 
 
 @import "sport-container";
