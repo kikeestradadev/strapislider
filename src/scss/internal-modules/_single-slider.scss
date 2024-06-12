@@ -134,13 +134,11 @@
         max-width: 900px;
         left: 67%;
 		min-height: 350px !important;
-		justify-content: space-evenly;
     }
     @include from(xl) {
         max-width: 950px;
         left: 65%;
 		min-height: 450px !important;
-		justify-content: space-evenly;
     }
 }
 
