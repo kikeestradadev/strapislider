@@ -16,51 +16,49 @@
 &__matchup-title-team-1, &__matchup-title-team-2{
 	text-shadow						: 2px 2px 4px rgba(0, 0, 0, 0.5);
 	z-index							: 1000;
-	position: relative;
+	position						: relative;
 	font-size						: 35px;
 	display							: block;
 	text-align						: center;
 	line-height						: 35px;
 	@include from(l){
 		font-size					: 25px;
-		line-height						: 25px;
+		line-height					: 25px;
 		display						: inline-block;
 		
 	}
 	@include from(lg){
 		display: block;
 		font-size					: 76px;
-		line-height						: 76px;
-		text-align: left;
+		line-height					: 76px;
+		text-align					: left;
 		
 	}
 }
 &__matchup-vrs-container{	
 	z-index							: 2000;
 	position						: relative;	
-	// border: 1px solid white;	
 	width							: 100%;
-	// border: 1px solid yellow;	
 	height							: 20px;
 	display							: block;
 	@include from(l){
 		display						: inline-block;
-		width						:25px;
+		width						: 25px;
 	}
 	@include from(lg){
-		width: 100px;
-		height: 60px;
+		width						: 100px;
+		height						: 60px;
 	}
 }
 &__matchup-vrs-logo{
 	width							: 40px; 
 	height							: auto;
-	position: absolute;
+	position						: absolute;
 	top								: 50%;
 	left							: 50%;
 	transform						: translate(-50%, -50%);
 	@include from(lg){
-		width						:60px;
+		width						: 60px;
 		top							: 50%;
 	}
 }
@@ -132,6 +130,5 @@
 	}
 	@include from(lg){
 		font-size					: 24px;
-		// margin-bottom				: 30px;
 	}
 }

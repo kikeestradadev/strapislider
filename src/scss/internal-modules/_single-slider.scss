@@ -1,6 +1,6 @@
 /*here start small-size slider module styles*/
 .single-slider{	
-	background-color: #0e1b71;
+	background-color					: #0e1b71;
 	.swiper-wrapper {
 		height	: 100% !important; // Asegurarse de que ocupe toda la altura del contenedor
 	}	
@@ -8,58 +8,55 @@
 	line-height							: 0;
 	
 	&__item{
-		line-height: 0;
+		line-height						: 0;
 	}
 	
 // container start
 
 &__item-container{	
-	position						: relative;
-	width							: 100%;
-	display							: flex;
-	flex-wrap						: wrap;
-	position						: relative;
-	height							: 100%;
-	min-height						: 313px;
-	background						: none !important;
+	position							: relative;
+	width								: 100%;
+	display								: flex;
+	flex-wrap							: wrap;
+	position							: relative;
+	height								: 100%;
+	min-height							: 313px;
+	background							: none !important;
 	@include from(l){
-		background-size				: cover;
-		padding-bottom 				: 0;
+		background-size					: cover;
+		padding-bottom 					: 0;
 	}
-	
 }
 &__sticky-ribon{
-	position: absolute;
-	right: 25px;
-	top: -5px;
-	z-index: 1000;
-	width: 60px;
-	height: 91px;
+	position							: absolute;
+	right								: 25px;
+	top									: -5px;
+	z-index								: 1000;
+	width								: 60px;
+	height								: 91px;
 	@include from(m){
-		width: 70px;
-		height: 106px;
+		width							: 70px;
+		height							: 106px;
 	}
 	@include from(l){
-		width: 81px;
-		height: 124px;
+		width							: 81px;
+		height							: 124px;
 	}
 }
 &__game-description{
-	display: none;
+	display								: none;
 	@include from(l){
-		display: block;
-		position: absolute;
-		bottom: 0;
-		z-index: 1000;
-		width: 298px;
-		height: 84px;
+		display							: block;
+		position						: absolute;
+		bottom							: 0;
+		z-index							: 1000;
+		width							: 298px;
+		height							: 84px;
 	}
-	@include from(xl){
-		
-		width: 550px;
-		height: 155px;
+	@include from(xl){		
+		width							: 550px;
+		height							: 155px;
 	}
-	
 }
 &__video-container{
 	position						: relative;	
@@ -86,66 +83,55 @@
 &__video-dk{
 	display							: none;
 	width							: 100%;
-	// max-width: 980px;
-	// border: 1px solid white;
 	@include from(l){
 		display: block;
 		max-width					: 50%;
-		// border: 1px solid white;
 	}
 	
 }
 &__video-mb{
 	width							: 100%;		
-	// border: 1px solid white;
 	@include from(l){
 		display						: none;
 	}
 }
 &__text-container {
-	// border: 1px solid white;
-    padding: 0 15px;
-    bottom: 0;
-    width: 100%;
-    background-color: #0e1b71;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    padding							: 0 15px;
+    bottom							: 0;
+    width							: 100%;
+    background-color				: #0e1b71;
+    display							: flex;
+    flex-direction					: column;
+    justify-content					: space-between;
     
     @include fromTo(s,l) {
-        padding-bottom: 75px;
-        // min-height: 280px;
+        padding-bottom				: 75px;
     }
-    @include from(sm) {
-        // Puedes ajustar más propiedades aquí si es necesario
-    }
+   
     @include from(l) {
-        position: absolute;
-        background-color: transparent;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        max-width: 550px;
-        left: 65%;
-        padding: 0;
-        min-height: 250px !important;
+        position					: absolute;
+        background-color			: transparent;
+        top							: 50%;
+        left						: 50%;
+        transform					: translate(-50%, -50%);
+        max-width					: 550px;
+        left						: 65%;
+        padding						: 0;
+        min-height					: 250px !important;
     }
     @include from(lg) {
-        max-width: 900px;
-        left: 67%;
-		min-height: 350px !important;
+        max-width					: 900px;
+        left						: 67%;
+		min-height					: 350px !important;
     }
     @include from(xl) {
-        max-width: 950px;
-        left: 65%;
-		min-height: 450px !important;
+        max-width					: 950px;
+        left						: 65%;
+		min-height					: 450px !important;
     }
 }
-
-
 @import "label-texts";
 @import "matchups-container";
-
 &__cta{
 	position: relative;
 	z-index: 1000;
@@ -185,20 +171,12 @@
 		font-size					: 30px;
 	}
 }
-
-
-
 // continer ends 
-
-
-
 	&__prev, &__next{
-		--swiper-navigation-size		: 24px;
-        background-color				: transparent;
-        // margin-top						: -35px;
-		color							: white;
-		font-weight						: bold;	
-		// border							: 1px solid white;
+		--swiper-navigation-size	: 24px;
+        background-color			: transparent;
+		color						: white;
+		font-weight					: bold;	
 		visibility					: visible;
 		height						: 70px;
 		width						: 70px;
@@ -216,23 +194,20 @@
 		height							: 20%;
 	}
 	&__pagination{
-		// border: 2px solid red;
-		bottom: 25px !important;
-		height: 18px;
-				
-		
+		bottom							: 25px !important;
+		height							: 18px;
 		@include from(l){
-			display: none;
+			display						: none;
 		}		
 	}
 	&__pagination > span.swiper-pagination-bullet{
-		width: 13px;
-		height: 13px;
-		background: #7a86b3;
-		opacity: 1;
+		width							: 13px;
+		height							: 13px;
+		background						: #7a86b3;
+		opacity							: 1;
 	}
 	&__pagination > span.swiper-pagination-bullet-active{
-		background-color: white;
+		background-color				: white;
 	}	
 	.swiper-button-disabled{ 
 		opacity							: .3; 
