@@ -1,19 +1,4 @@
-/*here start core layout ui scripts imports*/
-import coreModule from './core-modules/coreModule';
-/*here finish core layout ui scripts imports*/
-
-/*here start internal layout ui components scripts imports*/
-import singleSlider from './internal-modules/basSlider';
-import basSlider from './internal-modules/singleSlider';
-/*here finish internal layout ui components scripts imports*/
-
+import basSlider from './internal-modules/basSlider';
 (() => {
-	/*here start core layout ui scripts functions*/
-    coreModule();
-	/*here finish core layout ui scripts functions*/
-})();
-
-(() => {
-	singleSlider();
 	basSlider();
 })();
