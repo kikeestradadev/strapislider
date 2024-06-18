@@ -3,7 +3,8 @@ import coreModule from './core-modules/coreModule';
 /*here finish core layout ui scripts imports*/
 
 /*here start internal layout ui components scripts imports*/
-import singleSlider from './internal-modules/singleSlider';
+import singleSlider from './internal-modules/basSlider';
+import basSlider from './internal-modules/singleSlider';
 /*here finish internal layout ui components scripts imports*/
 
 (() => {
@@ -14,4 +15,5 @@ import singleSlider from './internal-modules/singleSlider';
 
 (() => {
 	singleSlider();
+	basSlider();
 })();

@@ -16,6 +16,45 @@ var coreModule = function coreModule() {
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
+var basSlider = function basSlider() {
+  document.addEventListener("DOMContentLoaded", function () {
+    var basSliderElement = document.querySelector('.bas-slider');
+    if (basSliderElement) {
+      var _basSlider = new Swiper('.bas-slider', {
+        // Optional parameters
+        effect: "fade",
+        speed: 800,
+        autoHeight: true,
+        fadeEffect: {
+          crossFade: true
+        },
+        watchOverflow: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true
+        },
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev"
+        },
+        // Accessibility options
+        a11y: {
+          enabled: true,
+          slideLabelMessage: "Slide {{index}} of {{slidesLength}}",
+          slideRole: null // Custom role for slide
+        }
+      });
+    }
+  });
+};
+/* harmony default export */ __webpack_exports__["default"] = (basSlider);
+
+/***/ }),
+/* 3 */
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
 var singleSlider = function singleSlider() {
   document.addEventListener("DOMContentLoaded", function () {
     var singleSliderElement = document.querySelector('.single-slider');
@@ -95,12 +134,14 @@ var __webpack_exports__ = {};
 !function() {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _core_modules_coreModule__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
-/* harmony import */ var _internal_modules_singleSlider__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
+/* harmony import */ var _internal_modules_basSlider__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
+/* harmony import */ var _internal_modules_singleSlider__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(3);
 /*here start core layout ui scripts imports*/
 
 /*here finish core layout ui scripts imports*/
 
 /*here start internal layout ui components scripts imports*/
+
 
 /*here finish internal layout ui components scripts imports*/
 
@@ -110,7 +151,8 @@ __webpack_require__.r(__webpack_exports__);
   /*here finish core layout ui scripts functions*/
 })();
 (function () {
-  (0,_internal_modules_singleSlider__WEBPACK_IMPORTED_MODULE_1__["default"])();
+  (0,_internal_modules_basSlider__WEBPACK_IMPORTED_MODULE_1__["default"])();
+  (0,_internal_modules_singleSlider__WEBPACK_IMPORTED_MODULE_2__["default"])();
 })();
 }();
 /******/ })()
