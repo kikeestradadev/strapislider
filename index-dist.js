@@ -40,6 +40,36 @@ var basSlider = function basSlider() {
 };
 /* harmony default export */ __webpack_exports__["default"] = (basSlider);
 
+/***/ }),
+/* 2 */
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
+function _defineProperty(e, r, t) { return (r = _toPropertyKey(r)) in e ? Object.defineProperty(e, r, { value: t, enumerable: !0, configurable: !0, writable: !0 }) : e[r] = t, e; }
+function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : i + ""; }
+function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
+var smallSizeSlider = function smallSizeSlider() {
+  document.addEventListener("DOMContentLoaded", function () {
+    var smallSizeSliderItem = document.querySelector('.small-size-slider');
+    if (smallSizeSliderItem) {
+      var _smallSizeSlider = new Swiper('.small-size-slider', _defineProperty(_defineProperty({
+        // Optional parameters
+        direction: 'horizontal',
+        loop: false,
+        allowThresholdMove: true,
+        slidesPerView: 'auto',
+        spaceBetween: 0
+      }, "spaceBetween", 7), "a11y", {
+        enabled: true,
+        slideLabelMessage: "Slide {{index}} of {{slidesLength}}",
+        slideRole: null // Custom role for slide
+      }));
+    }
+  });
+};
+/* harmony default export */ __webpack_exports__["default"] = (smallSizeSlider);
+
 /***/ })
 /******/ 	]);
 /************************************************************************/
@@ -85,9 +115,12 @@ var __webpack_exports__ = {};
 !function() {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _internal_modules_basSlider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var _internal_modules_smallSizeSlider__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
+
 
 (function () {
   (0,_internal_modules_basSlider__WEBPACK_IMPORTED_MODULE_0__["default"])();
+  (0,_internal_modules_smallSizeSlider__WEBPACK_IMPORTED_MODULE_1__["default"])();
 })();
 }();
 /******/ })()
