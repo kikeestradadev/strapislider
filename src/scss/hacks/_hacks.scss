@@ -1,0 +1,12 @@
+.page_dk{
+	display: none;
+	@include from(m){
+		display: block;
+	}
+}
+.page_mb{
+	
+	@include from(m){
+		display: none;
+	}
+}
