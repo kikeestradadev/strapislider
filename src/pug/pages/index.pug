@@ -7,11 +7,19 @@ append config
 block main-header
 block main-container
 	include ../internal-modules/bas-slider
+	div(class='main-content')
+		include ../internal-modules/small-size-slider
+		h1 Slider Test
+		include ../internal-modules/small-size-slider
+		h1 Slider Test
+		include ../internal-modules/small-size-slider
+		h1 Slider Test
+		include ../internal-modules/small-size-slider
 	//- include ../internal-modules/single-slider
-	-for(let i=1; i <=5; i++)
-		h1 Lorem, ipsum.
-		p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, iusto. Molestiae, dolores repellat. 
-			|Assumenda perferendis veniam, ipsam iure consequatur voluptatem et, tenetur, mollitia cupiditate impedit explicabo illo velit dicta quaerat!
+	//- -for(let i=1; i <=5; i++)
+	//- 	h1 Lorem, ipsum.
+	//- 	p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, iusto. Molestiae, dolores repellat. 
+	//- 		|Assumenda perferendis veniam, ipsam iure consequatur voluptatem et, tenetur, mollitia cupiditate impedit explicabo illo velit dicta quaerat!
 	//- include ../internal-modules/main-banner
 	//- include ../core-modules/core-module
 	//- include ../internal-modules/internal-module 

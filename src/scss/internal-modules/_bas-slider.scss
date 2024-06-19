@@ -1,12 +1,19 @@
 /*here start small-size slider module styles*/
 .bas-slider{	
 	background-color					: #0e1b71;
-	&__wrapper {}	
+	margin-bottom: 30px;
+	&__wrapper {
+		@include from(xxl){
+			// border: 2px solid red;
+			height: 610px !important;		
+		}
+	}	
 	&__item{
 		position: relative;
 		display: flex;
 		flex-direction: column-reverse;
 		// border: 2px solid green;
+		
 	}	
 	&__video-dk{
 		display: none;
