@@ -2,9 +2,13 @@
 .bas-slider{	
 	background-color					: #0e1b71;
 	margin-bottom: 30px;
+	@include from(xxl){
+		border: 2px solid red;
+		height: 610px !important;		
+	}
 	&__wrapper {
 		@include from(xxl){
-			// border: 2px solid red;
+			border: 2px solid red;
 			height: 610px !important;		
 		}
 	}	
